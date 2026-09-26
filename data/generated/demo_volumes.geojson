@@ -1,0 +1,677 @@
+{
+  "type": "FeatureCollection",
+  "name": "Bhu-Aadhaar 3D synthetic demo",
+  "metadata": {
+    "name": "SIH minimal synthetic tower",
+    "status": "SYNTHETIC_DEMO",
+    "parent_ulpin": "12345678901234",
+    "horizontal_crs": "LOCAL_METRES_FOR_DEMO_ONLY",
+    "vertical_reference": "RELATIVE_TO_SYNTHETIC_GROUND_LEVEL",
+    "map_anchor_wgs84": [
+      77.75,
+      12.97
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "PARK-B1-W",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74988932511191,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "PARK-B1-W",
+        "kind": "parking",
+        "ulpin3d": "12345678901234-NAH0-ZT06-N",
+        "base_m": -3,
+        "top_m": 0,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          -12,
+          -8,
+          0,
+          8,
+          -3,
+          0
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PARK-B1-E",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "PARK-B1-E",
+        "kind": "parking",
+        "ulpin3d": "12345678901234-0050-ZT06-A",
+        "base_m": -3,
+        "top_m": 0,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          0,
+          -8,
+          12,
+          8,
+          -3,
+          0
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-101",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74988932511191,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-101",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-NAH0-0006-9",
+        "base_m": 0,
+        "top_m": 3,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          -12,
+          -8,
+          0,
+          8,
+          0,
+          3
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-102",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-102",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-0050-0006-Y",
+        "base_m": 0,
+        "top_m": 3,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          0,
+          -8,
+          12,
+          8,
+          0,
+          3
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-201",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74988932511191,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-201",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-NAH0-0606-X",
+        "base_m": 3,
+        "top_m": 6,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          -12,
+          -8,
+          0,
+          8,
+          3,
+          6
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-202",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-202",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-0050-0606-J",
+        "base_m": 3,
+        "top_m": 6,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          0,
+          -8,
+          12,
+          8,
+          3,
+          6
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-301",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74988932511191,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-301",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-NAH0-0C06-H",
+        "base_m": 6,
+        "top_m": 9,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          -12,
+          -8,
+          0,
+          8,
+          6,
+          9
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-302",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-302",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-0050-0C06-6",
+        "base_m": 6,
+        "top_m": 9,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          0,
+          -8,
+          12,
+          8,
+          6,
+          9
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-401",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74988932511191,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.970071864894
+            ],
+            [
+              77.74988932511191,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-401",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-NAH0-0J06-4",
+        "base_m": 9,
+        "top_m": 12,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          -12,
+          -8,
+          0,
+          8,
+          9,
+          12
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UNIT-402",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.969928135106
+            ],
+            [
+              77.75011067488809,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.970071864894
+            ],
+            [
+              77.75,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UNIT-402",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-0050-0J06-S",
+        "base_m": 9,
+        "top_m": 12,
+        "height_m": 3,
+        "area_m2": 192,
+        "volume_m3": 576,
+        "local_bounds_m": [
+          0,
+          -8,
+          12,
+          8,
+          9,
+          12
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "UTILITY-01",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.74981554185318,
+              12.969982033776501
+            ],
+            [
+              77.75018445814682,
+              12.969982033776501
+            ],
+            [
+              77.75018445814682,
+              12.9700179662235
+            ],
+            [
+              77.74981554185318,
+              12.9700179662235
+            ],
+            [
+              77.74981554185318,
+              12.969982033776501
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "UTILITY-01",
+        "kind": "utility",
+        "ulpin3d": "12345678901234-0000-ZG06-3",
+        "base_m": -8,
+        "top_m": -5,
+        "height_m": 3,
+        "area_m2": 160,
+        "volume_m3": 480,
+        "local_bounds_m": [
+          -20,
+          -2,
+          20,
+          2,
+          -8,
+          -5
+        ],
+        "data_status": "SYNTHETIC_DEMO"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BAD-DUPLICATE-302",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75000922290734,
+              12.969937118217752
+            ],
+            [
+              77.75010145198075,
+              12.969937118217752
+            ],
+            [
+              77.75010145198075,
+              12.97006288178225
+            ],
+            [
+              77.75000922290734,
+              12.97006288178225
+            ],
+            [
+              77.75000922290734,
+              12.969937118217752
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "BAD-DUPLICATE-302",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-0050-0C06-6",
+        "base_m": 6,
+        "top_m": 9,
+        "height_m": 3,
+        "area_m2": 140,
+        "volume_m3": 420,
+        "local_bounds_m": [
+          1,
+          -7,
+          11,
+          7,
+          6,
+          9
+        ],
+        "data_status": "SYNTHETIC_DEMO",
+        "registration_status": "REJECTED",
+        "conflicts_with": [
+          "UNIT-302"
+        ],
+        "validation_errors": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BAD-OUTSIDE-501",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.75016601233213,
+              12.969928135106
+            ],
+            [
+              77.75023057268352,
+              12.969928135106
+            ],
+            [
+              77.75023057268352,
+              12.970071864894
+            ],
+            [
+              77.75016601233213,
+              12.970071864894
+            ],
+            [
+              77.75016601233213,
+              12.969928135106
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "key": "BAD-OUTSIDE-501",
+        "kind": "unit",
+        "ulpin3d": "12345678901234-024A-0R06-P",
+        "base_m": 12,
+        "top_m": 15,
+        "height_m": 3,
+        "area_m2": 112,
+        "volume_m3": 336,
+        "local_bounds_m": [
+          18,
+          -8,
+          25,
+          8,
+          12,
+          15
+        ],
+        "data_status": "SYNTHETIC_DEMO",
+        "registration_status": "REJECTED",
+        "conflicts_with": [],
+        "validation_errors": [
+          "OUTSIDE_PARENT_PARCEL"
+        ]
+      }
+    }
+  ]
+}

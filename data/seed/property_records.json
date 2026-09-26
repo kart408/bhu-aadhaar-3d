@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "status": "SYNTHETIC_DEMO",
+    "parent_ulpin": "12345678901234",
+    "area_tolerance_pct": 5.0
+  },
+  "units": [
+    {"volume_key": "UNIT-101", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-102", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-201", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-202", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-301", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-302", "declared_carpet_m2": 192.0, "share_pct": 12.875},
+    {"volume_key": "UNIT-401", "declared_carpet_m2": 230.4, "share_pct": 12.875},
+    {"volume_key": "UNIT-402", "declared_carpet_m2": 192.0, "share_pct": 12.875}
+  ],
+  "rights": [
+    {"volume_key": "UNIT-101", "holder": "Demo Holder 101", "type": "ownership", "deed_ref": "DEMO-DEED-101", "active": true},
+    {"volume_key": "UNIT-102", "holder": "Demo Holder 102", "type": "ownership", "deed_ref": "DEMO-DEED-102", "active": true},
+    {"volume_key": "UNIT-201", "holder": "Demo Holder 201", "type": "ownership", "deed_ref": "DEMO-DEED-201", "active": true},
+    {"volume_key": "UNIT-202", "holder": "Demo Holder 202", "type": "ownership", "deed_ref": "DEMO-DEED-202", "active": true},
+    {"volume_key": "UNIT-301", "holder": "Demo Holder 301", "type": "ownership", "deed_ref": "DEMO-DEED-301", "active": true},
+    {"volume_key": "UNIT-302", "holder": "Demo Holder A", "type": "ownership", "deed_ref": "DEMO-DEED-302-A", "active": true},
+    {"volume_key": "UNIT-302", "holder": "Demo Holder B", "type": "ownership", "deed_ref": "DEMO-DEED-302-B", "active": true},
+    {"volume_key": "UNIT-401", "holder": "Demo Holder 401", "type": "ownership", "deed_ref": "DEMO-DEED-401", "active": true},
+    {"volume_key": "UNIT-402", "holder": "Demo Holder 402", "type": "ownership", "deed_ref": "DEMO-DEED-402", "active": true}
+  ]
+}
+

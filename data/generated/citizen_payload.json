@@ -1,0 +1,30 @@
+{
+  "envelope": "BHU3D2.eyJhcmVhX20yIjoxOTIsImJhc2VfbSI6NiwiYm91bmRzX20iOlswLC04LDEyLDgsNiw5XSwiZGF0YV9zdGF0dXMiOiJTWU5USEVUSUNfREVNTyIsImV4cGlyZXNfYXQiOiIyMDI3LTA5LTI2VDAwOjAwOjAwWiIsImhvcml6b250YWxfcmVmZXJlbmNlIjoiTE9DQUxfTUVUUkVTX0ZPUl9ERU1PX09OTFkiLCJpc3N1ZWRfYXQiOiIyMDI2LTA5LTI2VDAwOjAwOjAwWiIsImlzc3VlciI6IkJIVTNEIFBST1RPVFlQRSBMQUIgXHUyMDE0IE5PVCBBIEdPVkVSTk1FTlQgSVNTVUVSIiwia2luZCI6InVuaXQiLCJwYXJlbnRfdWxwaW4iOiIxMjM0NTY3ODkwMTIzNCIsInByb3BlcnR5X2tleSI6IlVOSVQtMzAyIiwidG9wX20iOjksInVscGluM2QiOiIxMjM0NTY3ODkwMTIzNC0wMDUwLTBDMDYtNiIsInZlcnNpb24iOjEsInZlcnRpY2FsX3JlZmVyZW5jZSI6IlJFTEFUSVZFX1RPX1NZTlRIRVRJQ19HUk9VTkRfTEVWRUwiLCJ2b2x1bWVfbTMiOjU3Nn0.demo-dolr-lab-p256-2026.JqL4Gw3LqT6xSTkAmRx-7goWRXqBokTcciYduHyoZOayCo8py1GSjZvDmLN2ak1QtBEZ300lr71geA8yordiqA",
+  "payload": {
+    "version": 1,
+    "data_status": "SYNTHETIC_DEMO",
+    "property_key": "UNIT-302",
+    "parent_ulpin": "12345678901234",
+    "ulpin3d": "12345678901234-0050-0C06-6",
+    "kind": "unit",
+    "bounds_m": [
+      0,
+      -8,
+      12,
+      8,
+      6,
+      9
+    ],
+    "base_m": 6,
+    "top_m": 9,
+    "area_m2": 192,
+    "volume_m3": 576,
+    "horizontal_reference": "LOCAL_METRES_FOR_DEMO_ONLY",
+    "vertical_reference": "RELATIVE_TO_SYNTHETIC_GROUND_LEVEL",
+    "issuer": "BHU3D PROTOTYPE LAB \u2014 NOT A GOVERNMENT ISSUER",
+    "issued_at": "2026-09-26T00:00:00Z",
+    "expires_at": "2027-09-26T00:00:00Z"
+  },
+  "key_id": "demo-dolr-lab-p256-2026",
+  "algorithm": "ES256"
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ULPIN Building Viewer — Bhu-Aadhaar 3D</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">SIH 26011 · PROPOSED PROTOTYPE</p>
+        <h1>Bhu-Aadhaar 3D</h1>
+      </div>
+      <div class="status"><span></span> Synthetic demo data</div>
+    </header>
+
+    <section class="lookup" aria-labelledby="lookup-title">
+      <div><p class="eyebrow">ULPIN PROPERTY LOOKUP</p><h2 id="lookup-title">View one building in 3D</h2><p>Enter the parent land ULPIN. Personal ownership details are not exposed by public lookup.</p></div>
+      <form id="ulpin-form"><label for="ulpin-input">14-digit ULPIN</label><div><input id="ulpin-input" inputmode="numeric" maxlength="14" value="12345678901234" /><button type="submit">Load 3D building</button></div><small id="lookup-message">Synthetic demo ULPIN: 12345678901234</small></form>
+    </section>
+
+    <main id="model-workspace" hidden>
+      <section class="viewer-card">
+        <div class="toolbar">
+          <label>
+            Show
+            <select id="kind-filter">
+              <option value="all">All volumes</option>
+              <option value="unit">Apartments</option>
+              <option value="parking">Basement parking</option>
+              <option value="utility">Underground utility</option>
+              <option value="rejected">Rejected proposals</option>
+            </select>
+          </label>
+          <label>
+            Floor
+            <select id="floor-filter">
+              <option value="all">All levels</option>
+              <option value="-8">Utility</option>
+              <option value="-3">Basement</option>
+              <option value="0">Floor 1</option>
+              <option value="3">Floor 2</option>
+              <option value="6">Floor 3</option>
+              <option value="9">Floor 4</option>
+              <option value="12">Invalid proposal</option>
+            </select>
+          </label>
+          <button id="reset-view" type="button">Reset selection</button>
+          <button id="toggle-lidar" type="button">Show LiDAR points</button>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="scene" aria-label="Interactive isometric property viewer"></canvas>
+          <div class="legend">
+            <span><i class="unit"></i>Apartment</span>
+            <span><i class="parking"></i>Parking</span>
+            <span><i class="utility"></i>Utility</span>
+            <span><i class="rejected"></i>Rejected</span>
+          </div>
+          <p class="hint">Click a volume to inspect it</p>
+        </div>
+      </section>
+
+      <aside class="inspector">
+        <p class="eyebrow">PROPERTY INSPECTOR</p>
+        <section class="building-summary">
+          <span class="pill">ULPIN MATCHED</span><h2 id="summary-ulpin"></h2>
+          <dl><div><dt>Registered 3D volumes</dt><dd id="summary-registered"></dd></div><div><dt>Rejected proposals</dt><dd id="summary-rejected"></dd></div><div><dt>Total registered volume</dt><dd id="summary-volume"></dd></div><div><dt>Advanced survey source</dt><dd id="summary-survey">Available · synthetic LiDAR demo</dd></div></dl>
+        </section>
+        <div id="empty-state">
+          <h2>Select a volume</h2>
+          <p>Choose an apartment, basement, utility, or rejected proposal in the model.</p>
+        </div>
+        <div id="details" hidden>
+          <div class="title-row">
+            <div>
+              <h2 id="detail-key"></h2>
+              <span id="detail-kind" class="pill"></span>
+            </div>
+            <span id="detail-status" class="pill"></span>
+          </div>
+          <dl>
+            <div><dt>Proposed 3D ULPIN</dt><dd id="detail-code" class="code"></dd></div>
+            <div><dt>Height band</dt><dd id="detail-height"></dd></div>
+            <div><dt>Footprint area</dt><dd id="detail-area"></dd></div>
+            <div><dt>Volume</dt><dd id="detail-volume"></dd></div>
+          </dl>
+          <div id="warning" class="warning" hidden>
+            <strong>Registration rejected</strong>
+            <p id="warning-text"></p>
+          </div>
+          <p class="disclaimer">Prototype identifier and synthetic geometry. Not an official land record.</p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

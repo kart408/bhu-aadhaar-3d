@@ -1,0 +1,47 @@
+{
+  "status": "FLAGGED",
+  "rules_run": 3,
+  "unit_records_checked": 8,
+  "rights_checked": 9,
+  "share_total_pct": 103.0,
+  "area_tolerance_pct": 5.0,
+  "finding_count": 3,
+  "severity_counts": {
+    "critical": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 0
+  },
+  "findings": [
+    {
+      "rule": "DUPLICATE_ACTIVE_RIGHT",
+      "severity": "CRITICAL",
+      "subject": "UNIT-302",
+      "message": "2 active exclusive ownership claims reference the same volume.",
+      "deed_refs": [
+        "DEMO-DEED-302-A",
+        "DEMO-DEED-302-B"
+      ]
+    },
+    {
+      "rule": "SHARE_TOTAL",
+      "severity": "HIGH",
+      "subject": "PARCEL",
+      "message": "Undivided shares total 103.00%, expected 100.00%.",
+      "measured": 103.0,
+      "expected": 100.0
+    },
+    {
+      "rule": "AREA_MISMATCH",
+      "severity": "MEDIUM",
+      "subject": "UNIT-401",
+      "message": "Declared area differs from mapped area by 20.0%.",
+      "declared_m2": 230.4,
+      "mapped_m2": 192,
+      "difference_pct": 20.0
+    }
+  ],
+  "disclaimer": "Automated consistency flags only; findings require authorized human review.",
+  "dataset_status": "SYNTHETIC_DEMO",
+  "parent_ulpin": "12345678901234"
+}

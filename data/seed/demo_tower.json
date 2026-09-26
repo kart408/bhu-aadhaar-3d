@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "SIH minimal synthetic tower",
+    "status": "SYNTHETIC_DEMO",
+    "parent_ulpin": "12345678901234",
+    "horizontal_crs": "LOCAL_METRES_FOR_DEMO_ONLY",
+    "vertical_reference": "RELATIVE_TO_SYNTHETIC_GROUND_LEVEL",
+    "map_anchor_wgs84": [77.7500, 12.9700]
+  },
+  "parcel": {
+    "key": "PARCEL-001",
+    "kind": "parcel",
+    "bounds": [-20, -15, 20, 15, -10, 20]
+  },
+  "volumes": [
+    {"key": "PARK-B1-W", "kind": "parking", "bounds": [-12, -8, 0, 8, -3, 0]},
+    {"key": "PARK-B1-E", "kind": "parking", "bounds": [0, -8, 12, 8, -3, 0]},
+    {"key": "UNIT-101", "kind": "unit", "bounds": [-12, -8, 0, 8, 0, 3]},
+    {"key": "UNIT-102", "kind": "unit", "bounds": [0, -8, 12, 8, 0, 3]},
+    {"key": "UNIT-201", "kind": "unit", "bounds": [-12, -8, 0, 8, 3, 6]},
+    {"key": "UNIT-202", "kind": "unit", "bounds": [0, -8, 12, 8, 3, 6]},
+    {"key": "UNIT-301", "kind": "unit", "bounds": [-12, -8, 0, 8, 6, 9]},
+    {"key": "UNIT-302", "kind": "unit", "bounds": [0, -8, 12, 8, 6, 9]},
+    {"key": "UNIT-401", "kind": "unit", "bounds": [-12, -8, 0, 8, 9, 12]},
+    {"key": "UNIT-402", "kind": "unit", "bounds": [0, -8, 12, 8, 9, 12]},
+    {"key": "UTILITY-01", "kind": "utility", "bounds": [-20, -2, 20, 2, -8, -5]}
+  ],
+  "proposed_conflicts": [
+    {"key": "BAD-DUPLICATE-302", "kind": "unit", "bounds": [1, -7, 11, 7, 6, 9]},
+    {"key": "BAD-OUTSIDE-501", "kind": "unit", "bounds": [18, -8, 25, 8, 12, 15]}
+  ]
+}
+

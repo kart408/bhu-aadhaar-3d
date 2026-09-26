@@ -1,0 +1,37 @@
+{
+  "dataset_status": "SYNTHETIC_DEMO",
+  "registered_volume_count": 11,
+  "registered_conflicts": [],
+  "all_registered_volumes_valid": true,
+  "proposed_insert_results": [
+    {
+      "key": "BAD-DUPLICATE-302",
+      "accepted": false,
+      "conflicts_with": [
+        "UNIT-302"
+      ],
+      "validation_errors": []
+    },
+    {
+      "key": "BAD-OUTSIDE-501",
+      "accepted": false,
+      "conflicts_with": [],
+      "validation_errors": [
+        "OUTSIDE_PARENT_PARCEL"
+      ]
+    }
+  ],
+  "identifiers": {
+    "PARK-B1-W": "12345678901234-NAH0-ZT06-N",
+    "PARK-B1-E": "12345678901234-0050-ZT06-A",
+    "UNIT-101": "12345678901234-NAH0-0006-9",
+    "UNIT-102": "12345678901234-0050-0006-Y",
+    "UNIT-201": "12345678901234-NAH0-0606-X",
+    "UNIT-202": "12345678901234-0050-0606-J",
+    "UNIT-301": "12345678901234-NAH0-0C06-H",
+    "UNIT-302": "12345678901234-0050-0C06-6",
+    "UNIT-401": "12345678901234-NAH0-0J06-4",
+    "UNIT-402": "12345678901234-0050-0J06-S",
+    "UTILITY-01": "12345678901234-0000-ZG06-3"
+  }
+}

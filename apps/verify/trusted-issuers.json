@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "purpose": "SYNTHETIC DEMO TRUST STORE ONLY",
+  "issuers": [
+    {
+      "kty": "EC",
+      "crv": "P-256",
+      "alg": "ES256",
+      "use": "sig",
+      "kid": "demo-dolr-lab-p256-2026",
+      "x": "GfhkM8J3uS_8fqRzjpEyd93MSgzvSILc2IrAFj3uAa8",
+      "y": "QYxpIRaIjioJGGJ_9MgYl8G9M_MmlbX16RG5eBTZToQ"
+    }
+  ],
+  "revoked_key_ids": []
+}

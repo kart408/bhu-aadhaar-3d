@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create a 3D Property — Bhu-Aadhaar 3D</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><div><p>PROPERTY INTAKE · SYNTHETIC MVP</p><h1>Bhu-Aadhaar 3D</h1></div><nav><a href="../viewer/">3D registry</a><a href="../registrar/">Registrar</a></nav></header>
+  <main>
+    <section class="intro"><p class="eyebrow">NORMAL DETAILS IN · 3D VOLUME OUT</p><h2>Create your property volume</h2><p>Enter details you already know. The prototype resolves a demo building and unit location, converts dimensions, and derives X, Y and Z automatically.</p></section>
+    <div class="layout">
+      <form id="property-form">
+        <fieldset><legend>1 · Property details</legend>
+          <label>Owner name<input name="owner" value="Karthik Reddy" required /></label>
+          <div class="row"><label>Property type<input name="type" value="Shop" required /></label><label>Shop / unit number<input name="unit" value="G-12" required /></label></div>
+          <label>Building / address<input name="address" value="ABC Complex, Hyderabad" required /><small>Any address works in the offline demo. Unknown addresses receive a clearly labelled deterministic demo placement.</small></label>
+          <div class="row"><label>Floor number<input name="floor" type="number" value="0" min="-5" max="100" step="1" required /><small>Ground = 0, first = 1, basement = -1.</small></label><label>Entrance / location note<input name="entrance" value="Shop G-12" /></label></div>
+          <label>Existing parent ULPIN<input name="ulpin" value="12345678901234" inputmode="numeric" maxlength="14" required /></label>
+        </fieldset>
+        <fieldset><legend>2 · Dimensions</legend><p class="hint">Mode 1: owner-provided measurements. Survey/LiDAR import is shown as the next geometry source.</p>
+          <div class="dimensions"><label>Length<input name="length" type="number" value="20" min="0.1" step="0.1" required /><span>ft</span></label><label>Width<input name="width" type="number" value="10" min="0.1" step="0.1" required /><span>ft</span></label><label>Height<input name="height" type="number" value="12" min="0.1" step="0.1" required /><span>ft</span></label></div>
+          <div class="mode"><b>Advanced source</b><span id="survey-status">LiDAR / point-cloud floor detection</span><button id="import-survey" type="button">Analyze demo scan</button></div>
+        </fieldset>
+        <button class="generate" type="submit">Generate 3D property</button><p id="form-error" class="error" hidden></p>
+      </form>
+      <aside>
+        <div id="empty"><div class="empty-cube">3D</div><h3>Your volume will appear here</h3><p>We need a mapped unit position as well as its dimensions. An address alone cannot identify the shop footprint.</p></div>
+        <div id="result" hidden>
+          <div class="status">GEOMETRY GENERATED · REVIEW REQUIRED</div><div class="scene"><div class="cube"><span id="cube-label">G-12</span></div><i class="axis x">X</i><i class="axis z">Z</i><i class="axis y">Y</i></div>
+          <h3 id="result-title"></h3><p id="proposal-id" class="code"></p>
+          <dl><div><dt>Resolved X / Y</dt><dd id="xy"></dd></div><div><dt>Derived Z range</dt><dd id="z"></dd></div><div><dt>Metric dimensions</dt><dd id="metric"></dd></div><div><dt>Area / volume</dt><dd id="measure"></dd></div><div><dt>Geometry bounds</dt><dd id="bounds" class="code"></dd></div><div><dt>Location source</dt><dd id="source"></dd></div></dl>
+          <div class="notice"><b>Not automatically registered</b><p>Owner measurements and directory placement are claims. A registrar must compare them with plans/survey data and run overlap and parcel-boundary checks.</p></div>
+          <button id="send-proposal" class="next" type="button">Send to registrar validation →</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

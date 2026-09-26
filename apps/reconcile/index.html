@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bhu-Aadhaar 3D — Reconciliation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div><p>SIH 26011 · SYNTHETIC DEMO</p><h1>Property Reconciliation</h1></div>
+      <nav><a href="../registrar/">Registrar</a><a href="../viewer/">3D viewer</a></nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div><span class="label">PARENT ULPIN</span><strong id="parent">Loading…</strong></div>
+        <div class="status" id="overall-status">Loading</div>
+      </section>
+      <section class="metrics">
+        <article><span>Undivided shares</span><strong id="shares">—</strong><small>Expected 100.00%</small></article>
+        <article><span>Units checked</span><strong id="units">—</strong><small>Against mapped geometry</small></article>
+        <article><span>Rights checked</span><strong id="rights">—</strong><small>Active and historic claims</small></article>
+        <article><span>Risk findings</span><strong id="findings">—</strong><small>Require human review</small></article>
+      </section>
+      <section class="content">
+        <div class="findings-card">
+          <div class="section-title"><div><p>RULE RESULTS</p><h2>Detected inconsistencies</h2></div><select id="severity"><option value="all">All severity</option><option>CRITICAL</option><option>HIGH</option><option>MEDIUM</option></select></div>
+          <div id="finding-list"></div>
+        </div>
+        <aside>
+          <p class="aside-label">ENGINE SCOPE</p>
+          <h2>Three transparent rules</h2>
+          <ol><li>Shares total 100%</li><li>Declared area matches mapped geometry within 5%</li><li>No duplicate active exclusive ownership claim</li></ol>
+          <div class="notice">These are consistency flags, not legal findings. An authorized officer must review the source deeds and evidence.</div>
+        </aside>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
+

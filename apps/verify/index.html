@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071a27" />
+    <title>Verify Property — Bhu-Aadhaar 3D</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><span class="mark">भू</span><div><p>PROPOSED PROTOTYPE</p><h1>Verify Property</h1></div><span id="network" class="network">Checking…</span></header>
+    <main>
+      <section class="scan-card">
+        <div class="qr-wrap"><img src="unit-302-qr.svg" alt="Synthetic Unit 302 verification QR" /></div>
+        <div>
+          <p class="eyebrow">SYNTHETIC DEMO QR</p>
+          <h2>Unit 302 property payload</h2>
+          <p class="muted">The issuer signature is verified locally against the cached demo trust store. No server lookup is required after the app and payload are cached.</p>
+          <div class="actions"><button id="verify-demo">Verify demo payload</button><button id="scan-image" class="secondary">Scan QR image</button><input id="image-file" type="file" accept="image/*" hidden /></div>
+          <details><summary>Paste an envelope instead</summary><textarea id="envelope-input" rows="4" placeholder="BHU3D2.…"></textarea><button id="verify-pasted" class="secondary">Validate pasted payload</button></details>
+        </div>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <div class="verified"><span>✓</span><div><p>DEMO ISSUER SIGNATURE VALID</p><h2 id="property-key"></h2></div></div>
+        <div class="volume-view"><div class="box"><span>Exact registered bounds</span></div><small id="height-label"></small></div>
+        <dl>
+          <div><dt>Proposed 3D ULPIN</dt><dd id="ulpin3d" class="code"></dd></div>
+          <div><dt>Parent ULPIN</dt><dd id="parent" class="code"></dd></div>
+          <div><dt>Height band</dt><dd id="height"></dd></div>
+          <div><dt>Mapped area</dt><dd id="area"></dd></div>
+          <div><dt>Mapped volume</dt><dd id="volume"></dd></div>
+          <div><dt>Demo issuer</dt><dd id="issuer"></dd></div>
+          <div><dt>Issuer key</dt><dd id="key-id" class="code"></dd></div>
+          <div><dt>Credential validity</dt><dd id="validity"></dd></div>
+        </dl>
+        <div class="caution"><strong>What this proves</strong><p>The payload was signed by the synthetic key bundled with this prototype and has not changed. It does not prove government issuance, current ownership, or legal title.</p></div>
+      </section>
+      <section id="error" class="error" hidden><h2>Verification failed</h2><p id="error-message"></p></section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
