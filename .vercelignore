@@ -1,0 +1,12 @@
+.git
+.venv
+.agents
+.codex
+.DS_Store
+**/__pycache__
+**/*.pyc
+data/generated/*.sqlite3
+data/seed/demo_issuer_private_key.pem
+docs/generate_workflow_pdf.swift
+*.pdf
+
