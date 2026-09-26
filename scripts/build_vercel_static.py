@@ -12,6 +12,7 @@ if PUBLIC.exists():
 PUBLIC.mkdir()
 
 shutil.copy2(ROOT / "index.html", PUBLIC / "index.html")
+shutil.copy2(ROOT / "site.css", PUBLIC / "site.css")
 shutil.copytree(ROOT / "apps", PUBLIC / "apps")
 (PUBLIC / "packages").mkdir()
 shutil.copytree(ROOT / "packages" / "web", PUBLIC / "packages" / "web")

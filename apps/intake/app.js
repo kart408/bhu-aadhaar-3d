@@ -71,7 +71,11 @@ form.addEventListener("submit", async (event) => {
         ? { accuracy_m:surveyResult.metadata.accuracy_m, acquired_at:surveyResult.metadata.acquired_at, point_count:surveyResult.metadata.points.length }
         : { dimension_unit:"feet", location_source:location.source, placement:location.unit.label },
     });
+    const progress = document.querySelectorAll(".ux-progress li");
+    progress.forEach((item) => item.classList.remove("active"));
+    progress[1]?.classList.add("active");
     error.hidden = true;
+    if (matchMedia("(max-width: 850px)").matches) document.querySelector("aside").scrollIntoView({ behavior:"smooth", block:"start" });
   } catch (problem) {
     error.textContent = problem.message;
     error.hidden = false;
@@ -83,6 +87,8 @@ document.querySelector("#send-proposal").addEventListener("click", async () => {
   const button = document.querySelector("#send-proposal");
   button.disabled = true;
   button.textContent = "Submitting…";
+  document.querySelectorAll(".ux-progress li").forEach((item) => item.classList.remove("active"));
+  document.querySelectorAll(".ux-progress li")[2]?.classList.add("active");
   try {
     const response = await fetch("/api/proposals", {
       method:"POST", headers:{ "Content-Type":"application/json" }, body:JSON.stringify(currentProposal),

@@ -57,6 +57,8 @@ async function approve() {
     clearPendingProposal(localStorage);
     document.querySelector("#decision-box").innerHTML = '<div class="decision pass"><h3>Registration approved and stored</h3><p>The property record and 3D bounds were saved in the registry database. Geometry matching was explicitly waived and remains visible in the audit history.</p></div>';
     button.textContent = "Approved";
+    document.querySelectorAll(".ux-progress li").forEach((item) => item.classList.remove("active"));
+    document.querySelectorAll(".ux-progress li")[2]?.classList.add("active");
     audit("Approved property stored", `${submittedProposal.id} · durable registry record created`);
     await refreshDurableAudit();
   } catch (error) {

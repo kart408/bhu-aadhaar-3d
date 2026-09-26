@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bhu-Aadhaar 3D — Reconciliation</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../shared.css" />
   </head>
-  <body>
+<body>
+    <a class="skip-link" href="#main-content">Skip to findings</a>
     <header>
       <div><p>SIH 26011 · SYNTHETIC DEMO</p><h1>Property Reconciliation</h1></div>
-      <nav><a href="../registrar/">Registrar</a><a href="../viewer/">3D viewer</a></nav>
+      <nav class="app-nav" aria-label="Applications"><a class="home-link" href="../../">Home</a><a href="../intake/">Intake</a><a href="../viewer/">3D viewer</a><a href="../registrar/">Registrar</a><a aria-current="page" href="./">Reconcile</a><a href="../verify/">Verify</a></nav>
     </header>
-    <main>
+    <main id="main-content">
       <section class="hero">
         <div><span class="label">PARENT ULPIN</span><strong id="parent">Loading…</strong></div>
         <div class="status" id="overall-status">Loading</div>
@@ -25,7 +27,7 @@
       <section class="content">
         <div class="findings-card">
           <div class="section-title"><div><p>RULE RESULTS</p><h2>Detected inconsistencies</h2></div><select id="severity"><option value="all">All severity</option><option>CRITICAL</option><option>HIGH</option><option>MEDIUM</option></select></div>
-          <div id="finding-list"></div>
+          <div id="finding-list" aria-live="polite"></div>
         </div>
         <aside>
           <p class="aside-label">ENGINE SCOPE</p>
@@ -38,4 +40,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-

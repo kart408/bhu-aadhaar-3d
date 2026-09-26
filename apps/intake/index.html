@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Create a 3D Property — Bhu-Aadhaar 3D</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../shared.css" />
 </head>
 <body>
-  <header><div><p>PROPERTY INTAKE · SYNTHETIC MVP</p><h1>Bhu-Aadhaar 3D</h1></div><nav><a href="../viewer/">3D registry</a><a href="../registrar/">Registrar</a></nav></header>
-  <main>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header><div><p>PROPERTY INTAKE · SYNTHETIC MVP</p><h1>Bhu-Aadhaar 3D</h1></div><nav class="app-nav" aria-label="Applications"><a class="home-link" href="../../">Home</a><a aria-current="page" href="./">Intake</a><a href="../viewer/">3D viewer</a><a href="../registrar/">Registrar</a><a href="../reconcile/">Reconcile</a><a href="../verify/">Verify</a></nav></header>
+  <main id="main-content">
     <section class="intro"><p class="eyebrow">NORMAL DETAILS IN · 3D VOLUME OUT</p><h2>Create your property volume</h2><p>Enter details you already know. The prototype resolves a demo building and unit location, converts dimensions, and derives X, Y and Z automatically.</p></section>
+    <ol class="ux-progress" aria-label="Registration workflow"><li class="active"><strong>1</strong>Create geometry</li><li><strong>2</strong>Review result</li><li><strong>3</strong>Registrar decision</li></ol>
     <div class="layout">
       <form id="property-form">
         <fieldset><legend>1 · Property details</legend>
@@ -23,11 +26,11 @@
           <div class="dimensions"><label>Length<input name="length" type="number" value="20" min="0.1" step="0.1" required /><span>ft</span></label><label>Width<input name="width" type="number" value="10" min="0.1" step="0.1" required /><span>ft</span></label><label>Height<input name="height" type="number" value="12" min="0.1" step="0.1" required /><span>ft</span></label></div>
           <div class="mode"><b>Advanced source</b><span id="survey-status">LiDAR / point-cloud floor detection</span><button id="import-survey" type="button">Analyze demo scan</button></div>
         </fieldset>
-        <button class="generate" type="submit">Generate 3D property</button><p id="form-error" class="error" hidden></p>
+        <button class="generate" type="submit">Generate 3D property</button><p id="form-error" class="error" role="alert" hidden></p>
       </form>
       <aside>
         <div id="empty"><div class="empty-cube">3D</div><h3>Your volume will appear here</h3><p>We need a mapped unit position as well as its dimensions. An address alone cannot identify the shop footprint.</p></div>
-        <div id="result" hidden>
+        <div id="result" aria-live="polite" hidden>
           <div class="status">GEOMETRY GENERATED · REVIEW REQUIRED</div><div class="scene"><div class="cube"><span id="cube-label">G-12</span></div><i class="axis x">X</i><i class="axis z">Z</i><i class="axis y">Y</i></div>
           <h3 id="result-title"></h3><p id="proposal-id" class="code"></p>
           <dl><div><dt>Resolved X / Y</dt><dd id="xy"></dd></div><div><dt>Derived Z range</dt><dd id="z"></dd></div><div><dt>Metric dimensions</dt><dd id="metric"></dd></div><div><dt>Area / volume</dt><dd id="measure"></dd></div><div><dt>Geometry bounds</dt><dd id="bounds" class="code"></dd></div><div><dt>Location source</dt><dd id="source"></dd></div></dl>

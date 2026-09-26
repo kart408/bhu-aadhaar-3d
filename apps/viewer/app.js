@@ -89,6 +89,8 @@ function draw() {
   }
   drawn = [];
   const ordered = features.filter(visible).sort((a, b) => a.properties.base_m - b.properties.base_m);
+  const counter = document.querySelector("#visible-count");
+  if (counter && features.length) counter.textContent = `${ordered.length} of ${features.length} volumes visible · click a volume to inspect it`;
   ordered.forEach((feature) => {
     const properties = feature.properties;
     const rejected = properties.registration_status === "REJECTED";
@@ -184,8 +186,11 @@ async function loadModel(ulpin) {
 
 document.querySelector("#ulpin-form").addEventListener("submit", async (event) => {
   event.preventDefault();
+  const button = document.querySelector("#load-model");
+  button.disabled = true; button.textContent = "Loading model…";
   try { await loadModel(document.querySelector("#ulpin-input").value.trim()); }
   catch (error) { const message=document.querySelector("#lookup-message"); message.textContent=error.message; message.classList.add("error"); document.querySelector("#model-workspace").hidden=true; }
+  finally { button.disabled = false; button.textContent = "Load 3D building"; }
 });
 
 document.querySelector("#toggle-lidar").addEventListener("click", async () => {

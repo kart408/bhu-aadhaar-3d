@@ -7,10 +7,12 @@
     <title>Verify Property — Bhu-Aadhaar 3D</title>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../shared.css" />
   </head>
-  <body>
-    <header><span class="mark">भू</span><div><p>PROPOSED PROTOTYPE</p><h1>Verify Property</h1></div><span id="network" class="network">Checking…</span></header>
-    <main>
+<body>
+    <a class="skip-link" href="#main-content">Skip to verification</a>
+    <header><span class="mark">भू</span><div><p>PROPOSED PROTOTYPE</p><h1>Verify Property</h1></div><nav class="app-nav" aria-label="Applications"><a class="home-link" href="../../">Home</a><a href="../intake/">Intake</a><a href="../viewer/">3D viewer</a><a href="../registrar/">Registrar</a><a href="../reconcile/">Reconcile</a><a aria-current="page" href="./">Verify</a></nav><span id="network" class="network">Checking…</span></header>
+    <main id="main-content">
       <section class="scan-card">
         <div class="qr-wrap"><img src="unit-302-qr.svg" alt="Synthetic Unit 302 verification QR" /></div>
         <div>
@@ -22,7 +24,7 @@
         </div>
       </section>
 
-      <section id="result" class="result" hidden>
+      <section id="result" class="result" aria-live="polite" hidden>
         <div class="verified"><span>✓</span><div><p>DEMO ISSUER SIGNATURE VALID</p><h2 id="property-key"></h2></div></div>
         <div class="volume-view"><div class="box"><span>Exact registered bounds</span></div><small id="height-label"></small></div>
         <dl>
@@ -37,7 +39,7 @@
         </dl>
         <div class="caution"><strong>What this proves</strong><p>The payload was signed by the synthetic key bundled with this prototype and has not changed. It does not prove government issuance, current ownership, or legal title.</p></div>
       </section>
-      <section id="error" class="error" hidden><h2>Verification failed</h2><p id="error-message"></p></section>
+      <section id="error" class="error" role="alert" hidden><h2>Verification failed</h2><p id="error-message"></p></section>
     </main>
     <script type="module" src="app.js"></script>
   </body>

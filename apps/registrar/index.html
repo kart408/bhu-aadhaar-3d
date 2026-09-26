@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bhu-Aadhaar 3D — Registrar Workflow</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../shared.css" />
   </head>
-  <body>
+<body>
+    <a class="skip-link" href="#main-content">Skip to review</a>
     <header>
       <div>
         <p class="eyebrow">REGISTRAR CONSOLE · SIMULATION</p>
         <h1>Bhu-Aadhaar 3D</h1>
       </div>
-      <a href="../viewer/">Open 3D viewer</a>
+      <nav class="app-nav" aria-label="Applications"><a class="home-link" href="../../">Home</a><a href="../intake/">Intake</a><a href="../viewer/">3D viewer</a><a aria-current="page" href="./">Registrar</a><a href="../reconcile/">Reconcile</a><a href="../verify/">Verify</a></nav>
     </header>
 
-    <main>
+    <main id="main-content">
+      <ol class="ux-progress" aria-label="Registration workflow"><li><strong>1</strong>Property submitted</li><li class="active"><strong>2</strong>Officer review</li><li><strong>3</strong>Decision stored</li></ol>
       <section class="workspace">
         <div class="primary-card">
           <section>
@@ -37,7 +40,7 @@
               </div>
             </article>
             <label id="confirmation" class="confirmation" hidden><input id="confirm-details" type="checkbox" /> I confirm the submitted ULPIN, address and property details have been reviewed.</label>
-            <div id="decision-box"></div>
+            <div id="decision-box" aria-live="polite"></div>
             <div class="actions"><button id="approve-proposal" class="primary" disabled hidden>Approve registration</button></div>
           </section>
         </div>

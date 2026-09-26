@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ULPIN Building Viewer — Bhu-Aadhaar 3D</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../shared.css" />
   </head>
-  <body>
+<body>
+    <a class="skip-link" href="#lookup-title">Skip to lookup</a>
     <header>
       <div>
         <p class="eyebrow">SIH 26011 · PROPOSED PROTOTYPE</p>
         <h1>Bhu-Aadhaar 3D</h1>
       </div>
-      <div class="status"><span></span> Synthetic demo data</div>
+      <nav class="app-nav" aria-label="Applications"><a class="home-link" href="../../">Home</a><a href="../intake/">Intake</a><a aria-current="page" href="./">3D viewer</a><a href="../registrar/">Registrar</a><a href="../reconcile/">Reconcile</a><a href="../verify/">Verify</a></nav>
     </header>
 
     <section class="lookup" aria-labelledby="lookup-title">
       <div><p class="eyebrow">ULPIN PROPERTY LOOKUP</p><h2 id="lookup-title">View one building in 3D</h2><p>Enter the parent land ULPIN. Personal ownership details are not exposed by public lookup.</p></div>
-      <form id="ulpin-form"><label for="ulpin-input">14-digit ULPIN</label><div><input id="ulpin-input" inputmode="numeric" maxlength="14" value="12345678901234" /><button type="submit">Load 3D building</button></div><small id="lookup-message">Synthetic demo ULPIN: 12345678901234</small></form>
+      <form id="ulpin-form"><label for="ulpin-input">14-digit ULPIN</label><div><input id="ulpin-input" inputmode="numeric" maxlength="14" value="12345678901234" aria-describedby="lookup-message" /><button id="load-model" type="submit">Load 3D building</button></div><small id="lookup-message" aria-live="polite">Synthetic demo ULPIN: 12345678901234</small></form>
     </section>
 
     <main id="model-workspace" hidden>
@@ -57,7 +59,7 @@
             <span><i class="utility"></i>Utility</span>
             <span><i class="rejected"></i>Rejected</span>
           </div>
-          <p class="hint">Click a volume to inspect it</p>
+          <p id="visible-count" class="hint" aria-live="polite">Click a volume to inspect it</p>
         </div>
       </section>
 

@@ -3,10 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=/apps/intake/">
-  <title>Bhu-Aadhaar 3D</title>
+  <meta name="theme-color" content="#071421">
+  <title>Bhu-Aadhaar 3D — Property Visualization Platform</title>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-  <p>Opening <a href="/apps/intake/">Bhu-Aadhaar 3D property intake</a>…</p>
+  <header><div class="brand"><span class="mark">भू</span><div><p>3D PROPERTY PROTOTYPE</p><h1>Bhu-Aadhaar 3D</h1></div></div><a class="header-link" href="https://github.com/kart408/bhu-aadhaar-3d">Project repository</a></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">FROM LAND PARCEL TO VOLUMETRIC PROPERTY</p><h2>See property rights in three dimensions.</h2><p class="lead">A transparent prototype for capturing property geometry, validating spatial conflicts, reviewing registrations and exploring a ULPIN-linked building model.</p><div class="hero-actions"><a class="primary" href="apps/intake/">Create a 3D property</a><a class="secondary" href="apps/viewer/">Explore the demo model</a></div></div>
+      <div class="model" aria-hidden="true"><div class="tower"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="model-label">11 registered volumes · 2 validation cases</span></div>
+    </section>
+    <section class="workflow"><div class="section-head"><p class="eyebrow">ONE CONNECTED WORKFLOW</p><h2>Capture to verification</h2><p>Every step keeps geometry, provenance and decisions explainable.</p></div><div class="flow"><article><span>01</span><h3>Capture</h3><p>Enter dimensions or analyze the synthetic point cloud.</p></article><article><span>02</span><h3>Model</h3><p>Generate metric XYZ bounds and a deterministic proposal.</p></article><article><span>03</span><h3>Validate</h3><p>Check parcel containment and positive 3D overlap.</p></article><article><span>04</span><h3>Review</h3><p>Record the registrar decision and audit history.</p></article><article><span>05</span><h3>Explore</h3><p>Inspect registered volumes and signed property facts.</p></article></div></section>
+    <section class="apps"><div class="section-head"><p class="eyebrow">OPEN AN APPLICATION</p><h2>Choose your workspace</h2></div><div class="app-grid">
+      <a class="app-card" href="apps/intake/"><span class="icon">01</span><h3>Property intake</h3><p>Create a proposal from ordinary property details or scan-derived geometry.</p><strong>Start proposal →</strong></a>
+      <a class="app-card" href="apps/viewer/"><span class="icon">3D</span><h3>Building viewer</h3><p>Explore apartments, parking, utilities, rejections and LiDAR evidence.</p><strong>Open viewer →</strong></a>
+      <a class="app-card" href="apps/registrar/"><span class="icon">✓</span><h3>Registrar review</h3><p>Review incoming submissions and record an auditable decision.</p><strong>Review request →</strong></a>
+      <a class="app-card" href="apps/reconcile/"><span class="icon">≠</span><h3>Reconciliation</h3><p>Inspect area, share and duplicate-right inconsistencies by severity.</p><strong>View findings →</strong></a>
+      <a class="app-card" href="apps/verify/"><span class="icon">⌁</span><h3>Citizen verification</h3><p>Validate a signed QR property credential using cached trust keys.</p><strong>Verify credential →</strong></a>
+    </div><div class="trust"><b>Prototype scope</b><p>This experience uses synthetic data and a proposed identifier. It demonstrates a technical workflow; it is not an official land record, survey, ownership decision or DoLR standard.</p></div></section>
+  </main>
+  <footer><span>Bhu-Aadhaar 3D · Synthetic demonstration</span><span>Built for explainable volumetric property workflows</span></footer>
 </body>
 </html>
